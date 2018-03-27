@@ -1,0 +1,311 @@
+/* =============================================================
+GENERAL STYLES
+============================================================ */
+body {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: #959595; }
+
+.text-def {
+  font-size: 1.4em;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  margin-top: 30px; }
+
+.caption-def {
+  color: #222626;
+  font-size: 3.5em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 65px; }
+
+.arrow-link {
+  color: #ffffff !important;
+  font-size: 1.4em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  width: 130px;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  float: left; }
+  .arrow-link img {
+    float: right;
+    margin-top: 0.5em; }
+
+.btn {
+  background-color: #82CA9C;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 15px 22px;
+  outline: none; }
+  .btn:hover {
+    color: #ffffff;
+    -webkit-box-shadow: 2px 3px 4px 3px #e1e1e1;
+            box-shadow: 2px 3px 4px 3px #e1e1e1; }
+  .btn:focus {
+    outline: none; }
+  .btn:active {
+    outline: none; }
+
+/* =============================================================
+HEADER STYLES
+============================================================ */
+header .header-wrap {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Rectangle.png");
+  border-image-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+  color: #ffffff; }
+  header .header-wrap .logo {
+    margin-top: 40px; }
+  header .header-wrap h1 {
+    font-size: 5.4em;
+    margin-top: 50%;
+    margin-bottom: 30px; }
+  header .header-wrap .header__discription {
+    font-size: 1.3em;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.8; }
+
+/* =============================================================
+CONTANT STYLES
+============================================================ */
+.content__iphone-block .iphone-img {
+  width: 100%;
+  margin-top: -96%; }
+
+.contant-grid {
+  padding-top: 65px; }
+
+.slide-grid {
+  height: 210px;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%; }
+  .slide-grid h3 {
+    font-size: 2.2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .slide-grid p {
+    font-size: 1.3em;
+    line-height: 1.6; }
+
+.bg-pink {
+  background-color: #F5989D; }
+
+.bg-purpur {
+  background-color: #615F7D; }
+
+.bg-purpur-light {
+  background-color: #BD8CBF; }
+
+.bg-green-light {
+  background-color: #82CA9C; }
+
+.slide-grid-1 {
+  background-image: url("../img/Layer6.png"); }
+
+.slide-grid-2 {
+  background-image: url("../img/Layer5.png"); }
+
+.slide-grid-3 {
+  background-image: url("../img/Layer14.png"); }
+
+.contant-discription {
+  padding-bottom: 120px; }
+  .contant-discription h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0; }
+  .contant-discription .text-def {
+    margin-top: 20px; }
+
+/*start carusel (slick slider)-------->*/
+.slider .slide {
+  width: 100%;
+  height: 660px;
+  border-image-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .slider .slide-1 {
+    background-image: url(../img/slides/slide-1.png); }
+  .slider .slide-2 {
+    background-image: url(../img/slides/slide-2.jpg); }
+  .slider .slide-3 {
+    background-image: url(../img/slides/slide-3.jpg); }
+  .slider .slide-4 {
+    background-image: url(../img/slides/slide-4.jpg); }
+  .slider .slide .slide-info {
+    color: #ffffff; }
+    .slider .slide .slide-info h4 {
+      font-size: 5.5em;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      line-height: 1.2;
+      margin-top: 50%;
+      margin-bottom: 35px;
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s; }
+    .slider .slide .slide-info p {
+      font-size: 1.3em;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      -webkit-animation-delay: 0.6s;
+              animation-delay: 0.6s; }
+
+/*start reasons (section)-------->*/
+.reasons {
+  background-color: #82CA9C;
+  padding-top: 95px;
+  padding-bottom: 120px; }
+  .reasons h2 {
+    color: #ffffff;
+    margin: 0 0 10px 0; }
+  .reasons h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 0;
+    color: #ffffff; }
+  .reasons .text-def {
+    color: #ffffff; }
+
+/*start shoping-sec (section)-------->*/
+.shoping-sec {
+  background-color: #F6F7FA;
+  padding-bottom: 110px; }
+  .shoping-sec .shoping {
+    margin-top: 80px;
+    padding: 36px 40px 44px 40px; }
+    .shoping-sec .shoping:hover {
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 20px 10px #f3f3f3;
+              box-shadow: 0px 0px 20px 10px #f3f3f3; }
+    .shoping-sec .shoping:hover .subject {
+      background-color: #BD8CBF; }
+    .shoping-sec .shoping .subject {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #E1E1E1;
+      padding: 6px 14px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px; }
+    .shoping-sec .shoping h2 {
+      margin: 20px 0; }
+    .shoping-sec .shoping .text-def {
+      color: #8297A7; }
+    .shoping-sec .shoping .software {
+      display: inline-block;
+      margin-top: 15px;
+      margin-right: 15px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .shoping-sec .shoping .software:hover {
+        -webkit-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+                transform: scale(1.15); }
+
+/* =============================================================
+FOOTER STYLES
+============================================================ */
+footer {
+  background-color: #192431;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  color: #F6F7FA;
+  font-size: 1.0em;
+  font-family: "Open Sans", sans-serif; }
+  footer h5 {
+    font-size: 1.3em; }
+  footer form {
+    height: 45px;
+    margin-top: 30px; }
+    footer form input, footer form button {
+      height: inherit;
+      border: none;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    footer form input {
+      width: -webkit-calc(100% - 49px);
+      width: calc(100% - 49px);
+      padding: 0 20px;
+      color: #959595;
+      font-size: 1.6em; }
+    footer form button {
+      width: 45px;
+      margin-left: -5px;
+      background-color: #82CA9C; }
+  footer .text-ftr {
+    color: #57697F; }
+  footer .footer-naw {
+    margin-top: 30px; }
+    footer .footer-naw li {
+      margin-top: 10px; }
+      footer .footer-naw li a {
+        color: #F6F7FA; }
+
+/* =============================================================
+RESPONSETIVE STYLES
+============================================================ */
+@media (max-width: 992px) {
+  .iphone-img h2, .caption-def,
+  .reasons h2, .contant-discription h2 {
+    text-align: center; }
+  .text-def {
+    text-align: justify; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    font-size: 14px; }
+  h1 {
+    text-align: center;
+    font-size: 3.2em !important; }
+  .header__discription {
+    text-align: center; }
+  .content__iphone-block {
+    padding-top: 30px; }
+    .content__iphone-block .iphone-img {
+      margin-top: 30px !important;
+      width: 60% !important;
+      display: block;
+      margin: 0 auto; }
+  .slide-grid {
+    margin-bottom: 30px;
+    font-size: 0.8em; }
+  .arrow-link {
+    width: 150px; }
+    .arrow-link img {
+      margin-top: 0.7em; }
+  .slide-info {
+    text-align: center; }
+    .slide-info h4 {
+      font-size: 3.2em !important; }
+    .slide-info p {
+      font-size: 1em; }
+    .slide-info .arrow-link {
+      font-size: 1em; }
+  footer {
+    padding-top: 70px; }
+    footer h5 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-top: 30px; }
+    footer .footer-naw {
+      text-align: center;
+      font-size: 1.2em; } }
