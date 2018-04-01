@@ -2,6 +2,8 @@
 GENERAL STYLES
 ============================================================ */
 body {
+  max-width: 2100px;
+  margin: 0 auto;
   font-size: 10px;
   font-family: "Open Sans", sans-serif;
   color: #959595; }
@@ -53,7 +55,7 @@ HEADER STYLES
 ============================================================ */
 header .header-wrap {
   width: 100%;
-  height: 100vh;
+  height: 720px;
   background-image: url("../img/Rectangle.png");
   border-image-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -75,8 +77,8 @@ header .header-wrap {
 CONTANT STYLES
 ============================================================ */
 .content__iphone-block .iphone-img {
-  width: 100%;
-  margin-top: -96%; }
+  width: 80%;
+  margin-top: -75%; }
 
 .contant-grid {
   padding-top: 65px; }
@@ -132,10 +134,12 @@ CONTANT STYLES
 /*start carusel (slick slider)-------->*/
 .slider .slide {
   width: 100%;
-  height: 660px;
+  height: 560px;
+  cursor: pointer;
   border-image-repeat: no-repeat;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  background-position: center center; }
   .slider .slide-1 {
     background-image: url(../img/slides/slide-1.png); }
   .slider .slide-2 {
@@ -151,8 +155,7 @@ CONTANT STYLES
       font-family: "Open Sans", sans-serif;
       font-weight: 300;
       line-height: 1.2;
-      margin-top: 50%;
-      margin-bottom: 35px;
+      margin-top: 35%;
       -webkit-animation-delay: 0.3s;
               animation-delay: 0.3s; }
     .slider .slide .slide-info p {
@@ -242,15 +245,18 @@ footer {
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
     footer form input {
-      width: -webkit-calc(100% - 49px);
-      width: calc(100% - 49px);
+      width: -webkit-calc(100% - 45px);
+      width: calc(100% - 45px);
       padding: 0 20px;
       color: #959595;
-      font-size: 1.6em; }
+      font-size: 1.6em;
+      position: relative; }
     footer form button {
       width: 45px;
-      margin-left: -5px;
-      background-color: #82CA9C; }
+      background-color: #82CA9C;
+      position: absolute;
+      bottom: 0;
+      right: 20px; }
   footer .text-ftr {
     color: #57697F; }
   footer .footer-naw {
@@ -263,43 +269,51 @@ footer {
 /* =============================================================
 RESPONSETIVE STYLES
 ============================================================ */
-@media (max-width: 992px) {
-  .iphone-img h2, .caption-def,
-  .reasons h2, .contant-discription h2 {
-    text-align: center; }
-  .text-def {
-    text-align: justify; } }
-
-@media (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
-    font-size: 14px; }
-  h1 {
-    text-align: center;
-    font-size: 3.2em !important; }
-  .header__discription {
+    font-size: 13px; }
+  .text-def {
+    text-align: justify; }
+  .caption-def {
+    font-size: 2.8em;
+    text-align: center; }
+  .btn {
+    margin-top: 2%; }
+  header .header-wrap {
+    height: 100vh; }
+    header .header-wrap h1 {
+      text-align: center;
+      font-size: 2.8em; }
+  header .header__discription {
     text-align: center; }
   .content__iphone-block {
-    padding-top: 30px; }
+    padding-top: 60px; }
     .content__iphone-block .iphone-img {
-      margin-top: 30px !important;
-      width: 60% !important;
+      width: 55%;
       display: block;
       margin: 0 auto; }
   .slide-grid {
     margin-bottom: 30px;
     font-size: 0.8em; }
+    .slide-grid h3 {
+      margin-top: 0; }
   .arrow-link {
     width: 150px; }
     .arrow-link img {
       margin-top: 0.7em; }
-  .slide-info {
-    text-align: center; }
-    .slide-info h4 {
-      font-size: 3.2em !important; }
-    .slide-info p {
-      font-size: 1em; }
-    .slide-info .arrow-link {
-      font-size: 1em; }
+  .slider .slide {
+    height: 100vh; }
+    .slider .slide .slide-info {
+      text-align: center; }
+      .slider .slide .slide-info h4 {
+        font-size: 2.6em;
+        margin-top: 60%; }
+      .slider .slide .slide-info p {
+        font-size: 1.1em;
+        line-height: 1.4; }
+      .slider .slide .slide-info .arrow-link {
+        font-size: 1.4em;
+        width: 190px; }
   footer {
     padding-top: 70px; }
     footer h5 {
@@ -309,3 +323,125 @@ RESPONSETIVE STYLES
     footer .footer-naw {
       text-align: center;
       font-size: 1.2em; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  header .header-wrap h1 {
+    margin-top: 5%; }
+  header .header-wrap .header__discription {
+    text-align: center; }
+  .content__iphone-block .iphone-img {
+    width: 50%; }
+  .slide-grid h3 {
+    margin-top: 30px; }
+  .slider .slide .slide-info {
+    text-align: center; }
+    .slider .slide .slide-info h4 {
+      font-size: 2.6em;
+      margin-top: 8%; }
+    .slider .slide .slide-info p {
+      font-size: 1.1em;
+      line-height: 1.4; }
+    .slider .slide .slide-info .arrow-link {
+      font-size: 1.4em; } }
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .text-def {
+    text-align: justify;
+    font-size: 1.6em; }
+  .caption-def {
+    font-size: 3.6em;
+    text-align: center; }
+  .btn {
+    margin-top: 2%; }
+  header .header-wrap h1 {
+    margin-top: 30%;
+    text-align: center;
+    font-size: 3.8em; }
+  header .header-wrap .header__discription {
+    text-align: center;
+    font-size: 1.8em; }
+  .content__iphone-block {
+    margin-top: 30px; }
+    .content__iphone-block .iphone-img {
+      width: 40%;
+      margin-top: 10%;
+      margin-left: 25%; }
+  .slide-grid {
+    margin-bottom: 30px; }
+  .slider .slide .slide-info {
+    text-align: center; }
+    .slider .slide .slide-info h4 {
+      font-size: 4.8em;
+      margin-top: 25%; }
+    .slider .slide .slide-info p {
+      font-size: 1.6em;
+      line-height: 1.4; }
+    .slider .slide .slide-info .arrow-link {
+      font-size: 1.4em; }
+  footer {
+    padding-top: 70px; }
+    footer h5 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-top: 30px; }
+    footer .footer-naw {
+      text-align: center;
+      font-size: 1.2em; }
+    footer .text-ftr {
+      text-align: center; } }
+
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  header .header-wrap {
+    height: 100vh; }
+    header .header-wrap h1 {
+      margin-top: 15%; }
+  .slider .slide {
+    height: 100vh; }
+    .slider .slide .slide-info h4 {
+      font-size: 3.8em;
+      margin-top: 15%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .content__iphone-block .iphone-img {
+    width: 80%;
+    margin-top: -75%;
+    margin-left: 25%; }
+  .slider .slide {
+    height: 100vh; }
+    .slider .slide .slide-info h4 {
+      font-size: 3.8em;
+      margin-top: 35%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+  header .header-wrap {
+    height: 100vh; }
+    header .header-wrap h1 {
+      margin-top: 15%; }
+  .content__iphone-block {
+    margin-top: 15%; }
+    .content__iphone-block .iphone-img {
+      width: 60%; }
+  .slider .slide {
+    height: 100vh; }
+    .slider .slide .slide-info {
+      text-align: center; }
+      .slider .slide .slide-info h4 {
+        font-size: 3.8em;
+        margin-top: 15%; }
+      .slider .slide .slide-info p {
+        font-size: 1.6em;
+        line-height: 1.4; }
+      .slider .slide .slide-info .arrow-link {
+        font-size: 1.4em; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  html {
+    overflow-x: hidden; }
+  header .header-wrap h1 {
+    margin-top: 5%; }
+  .content__iphone-block .iphone-img {
+    width: 80%;
+    margin-top: -75%;
+    margin-left: 5%; }
+  .slide-grid h3 {
+    margin-top: 0px; } }
